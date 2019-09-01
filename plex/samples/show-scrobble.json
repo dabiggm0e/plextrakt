@@ -1,0 +1,72 @@
+{
+  "event": "media.scrobble",
+  "user": true,
+  "owner": true,
+  "Account": {
+    "id": 1,
+    "thumb": "https://plex.tv/users/8c9c838906ce06bc/avatar?c=1558477622",
+    "title": "dabiggmoe"
+  },
+  "Server": {
+    "title": "homebase",
+    "uuid": "046092b86b55107f9907565e770b13245a52ba15"
+  },
+  "Player": {
+    "local": true,
+    "publicAddress": "94.99.249.164",
+    "title": "Chrome",
+    "uuid": "jcpk6tkjcspb78kjh9mwv89x"
+  },
+  "Metadata": {
+    "librarySectionType": "show",
+    "ratingKey": "4183",
+    "key": "/library/metadata/4183",
+    "parentRatingKey": "4181",
+    "grandparentRatingKey": "4180",
+    "guid": "com.plexapp.agents.thetvdb://321060/1/5?lang=en",
+    "librarySectionTitle": "TV Shows",
+    "librarySectionID": 1,
+    "librarySectionKey": "/library/sections/1",
+    "type": "episode",
+    "title": "Chapter 5: Paradise",
+    "grandparentKey": "/library/metadata/4180",
+    "parentKey": "/library/metadata/4181",
+    "grandparentTitle": "The OA",
+    "parentTitle": "Season 1",
+    "contentRating": "TV-14",
+    "summary": "While Hap zeroes in on a new test subject in Cuba, Homer and OA work to perfect their escape plan. Scott reaches his breaking point.",
+    "index": 5,
+    "parentIndex": 1,
+    "rating": 7.8,
+    "viewCount": 1,
+    "lastViewedAt": 1559442130,
+    "year": 2016,
+    "thumb": "/library/metadata/4183/thumb/1557280457",
+    "art": "/library/metadata/4180/art/1557264139",
+    "parentThumb": "/library/metadata/4181/thumb/1557264139",
+    "grandparentThumb": "/library/metadata/4180/thumb/1557264139",
+    "grandparentArt": "/library/metadata/4180/art/1557264139",
+    "originallyAvailableAt": "2016-12-16",
+    "addedAt": 1557263839,
+    "updatedAt": 1557280457,
+    "Director": [
+      {
+        "id": 5599,
+        "filter": "director=5599",
+        "tag": "Zal Batmanglij"
+      }
+    ],
+    "Writer": [
+      {
+        "id": 5600,
+        "filter": "writer=5600",
+        "tag": "Brit Marling"
+      },
+      {
+        "id": 5601,
+        "filter": "writer=5601",
+        "tag": "Zal Batmanglij"
+      }
+    ]
+  }
+}

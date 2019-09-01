@@ -1,0 +1,53 @@
+{
+  "event": "media.scrobble",
+  "user": true,
+  "owner": true,
+  "Account": {
+    "id": 1,
+    "thumb": "https://plex.tv/users/8c9c838906ce06bc/avatar?c=1558477622",
+    "title": "dabiggmoe"
+  },
+  "Server": {
+    "title": "homebase",
+    "uuid": "046092b86b55107f9907565e770b13245a52ba15"
+  },
+  "Player": {
+    "local": true,
+    "publicAddress": "94.99.249.164",
+    "title": "Chrome",
+    "uuid": "jcpk6tkjcspb78kjh9mwv89x"
+  },
+  "Metadata": {
+    "librarySectionType": "show",
+    "ratingKey": "698",
+    "key": "/library/metadata/698",
+    "parentRatingKey": "689",
+    "grandparentRatingKey": "685",
+    "guid": "com.plexapp.agents.thetvdb://79895/1/10?lang=en",
+    "librarySectionTitle": "Anime",
+    "librarySectionID": 2,
+    "librarySectionKey": "/library/sections/2",
+    "type": "episode",
+    "title": "Eat Something Sour When You're Tired!",
+    "grandparentKey": "/library/metadata/685",
+    "parentKey": "/library/metadata/689",
+    "grandparentTitle": "Gintama",
+    "parentTitle": "Season 1",
+    "contentRating": "TV-14",
+    "summary": "The group picks up a giant white dog.",
+    "index": 10,
+    "parentIndex": 1,
+    "rating": 9.5,
+    "viewCount": 1,
+    "lastViewedAt": 1559441765,
+    "year": 2006,
+    "thumb": "/library/metadata/698/thumb/1558644005",
+    "art": "/library/metadata/685/art/1558644099",
+    "parentThumb": "/library/metadata/689/thumb/1558644099",
+    "grandparentThumb": "/library/metadata/685/thumb/1558644099",
+    "grandparentArt": "/library/metadata/685/art/1558644099",
+    "originallyAvailableAt": "2006-06-06",
+    "addedAt": 1508031772,
+    "updatedAt": 1558644005
+  }
+}
