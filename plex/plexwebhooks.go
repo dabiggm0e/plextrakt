@@ -1,8 +1,8 @@
 package plex
 
 const (
-	PLEX_MOVIE_TYPE = "movie"
-	PLEX_SHOW_TYPE  = "show"
+	PlexMovieType = "movie"
+	PlexShowType  = "show"
 )
 
 // Webhook describes the plex webhook json structure
@@ -158,12 +158,12 @@ func (w *Webhook) GetMediaType() string {
 
 //IsMovie returns whether the media is a movie or not
 func (w *Webhook) IsMovie() bool {
-	return w.Metadata.Mediatype == PLEX_MOVIE_TYPE
+	return w.Metadata.Mediatype == PlexMovieType
 }
 
 //IsShow returns whether the media is a show or not
 func (w *Webhook) IsShow() bool {
-	return w.Metadata.Mediatype == PLEX_SHOW_TYPE
+	return w.Metadata.Mediatype == PlexShowType
 }
 
 //GetSeason returns the show's season number
