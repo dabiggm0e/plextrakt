@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	// load a sample webhook json file
 	file, err := ioutil.ReadFile("plex/samples/movie-scrobble.json")
 	if err != nil {
 		fmt.Print(err)
@@ -18,6 +19,7 @@ func main() {
 	//	str := string(file)
 	//	fmt.Print(str)
 
+	// make sure it has been unmarshaled successfully
 	webhook := plex.Webhook{}
 	err = json.Unmarshal([]byte(file), &webhook)
 
@@ -25,4 +27,5 @@ func main() {
 		log.Printf("Error unmarshaling: %v", err)
 	}
 	fmt.Printf("%+v", webhook)
+
 }

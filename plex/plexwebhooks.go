@@ -1,62 +1,63 @@
 package plex
 
+// Plex webhook json structure
 type Webhook struct {
-	event    string
-	user     bool
-	owner    bool
-	Account  Account  `json:"Account"`
-	Server   Server   `json:"Server"`
-	Player   Player   `json:"Player"`
-	Metadata Metadata `json:"Metadata"`
+	Event    string
+	User     bool
+	Owner    bool
+	Account  Account
+	Server   Server
+	Player   Player
+	Metadata Metadata
 }
 
 type Account struct {
-	id    int
-	thumb string
-	title string
+	Id    int
+	Thumb string
+	Title string
 }
 
 type Server struct {
-	title string
-	uuid  string
+	Title string
+	UUID  string
 }
 
 type Player struct {
-	local         bool
-	publicAddress string
-	title         string
-	uuid          string
+	Local         bool
+	PublicAddress string
+	Title         string
+	UUID          string
 }
 
 type Metadata struct {
-	librarySectionType    string
-	ratingKey             string
-	key                   string
-	guid                  string
-	librarySectionTitle   string
-	librarySectionID      int
-	librarySectionKey     string
-	studio                string
+	LibrarySectionType    string
+	RatingKey             string
+	Key                   string
+	Guid                  string
+	LibrarySectionTitle   string
+	LibrarySectionID      int
+	LibrarySectionKey     string
+	Studio                string
 	Mediatype             string `json:"type"`
-	title                 string
-	contentRating         string
-	summary               string
-	rating                float32
-	audienceRating        float32
-	viewCousnt            int
-	lastViewedAt          int32
-	year                  int
-	tagline               string
-	thumb                 string
-	art                   string
-	duration              int
-	originallyAvailableAt string
-	addedAt               int32
-	updatedAt             int32
-	audienceRatingImage   string
-	chapterSource         string
-	primaryExtraKey       string
-	ratingImage           string
+	Title                 string
+	ContentRating         string
+	Summary               string
+	Rating                float32
+	AudienceRating        float32
+	ViewCousnt            int
+	LastViewedAt          int32
+	Year                  int
+	Tagline               string
+	Thumb                 string
+	Art                   string
+	Duration              int
+	OriginallyAvailableAt string
+	AddedAt               int32
+	UpdatedAt             int32
+	AudienceRatingImage   string
+	ChapterSource         string
+	PrimaryExtraKey       string
+	RatingImage           string
 	Genre                 []Genre
 	Director              []Director
 	Writer                []Writer
@@ -68,53 +69,53 @@ type Metadata struct {
 }
 
 type Genre struct {
-	id     int
-	filter string
-	tag    string
-	count  int
+	Id     int
+	Filter string
+	Tag    string
+	Count  int
 }
 
 type Director struct {
-	id     int
-	filter string
-	tag    string
+	Id     int
+	Filter string
+	Tag    string
 }
 
 type Writer struct {
-	id     int
-	filter string
-	tag    string
+	Id     int
+	Filter string
+	Tag    string
 }
 
 type Producer struct {
-	id     int
-	filter string
-	tag    string
+	Id     int
+	Filter string
+	Tag    string
 }
 
 type Country struct {
-	id     int
-	filter string
-	tag    string
-	count  int
+	Id     int
+	Filter string
+	Tag    string
+	Count  int
 }
 
 type Collection struct {
-	id     int
-	filter string
-	tag    string
+	Id     int
+	Filter string
+	Tag    string
 }
 
 type Role struct {
-	id     int
-	filter string
-	tag    string
-	role   string
-	thumb  string
+	Id     int
+	Filter string
+	Tag    string
+	Role   string
+	Thumb  string
 }
 
 type Similar struct {
-	id     int
-	filter string
-	tag    string
+	Id     int
+	Filter string
+	Tag    string
 }
