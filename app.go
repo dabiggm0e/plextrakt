@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// load a sample webhook json file
-	file, err := ioutil.ReadFile("plex/samples/movie-scrobble.json")
+	file, err := ioutil.ReadFile("plex/samples/show-scrobble2.json")
 	if err != nil {
 		fmt.Print(err)
 	}

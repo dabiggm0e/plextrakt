@@ -1,0 +1,69 @@
+{
+  "event": "media.scrobble",
+  "user": true,
+  "owner": true,
+  "Account": {
+    "id": 1,
+    "thumb": "https://plex.tv/users/8c9c838906ce06bc/avatar?c=1558477622",
+    "title": "dabiggmoe"
+  },
+  "Server": {
+    "title": "homebase",
+    "uuid": "046092b86b55107f9907565e770b13245a52ba15"
+  },
+  "Player": {
+    "local": true,
+    "publicAddress": "51.235.183.187",
+    "title": "Chrome",
+    "uuid": "jcpk6tkjcspb78kjh9mwv89x"
+  },
+  "Metadata": {
+    "librarySectionType": "show",
+    "ratingKey": "4936",
+    "key": "/library/metadata/4936",
+    "parentRatingKey": "4935",
+    "grandparentRatingKey": "4934",
+    "guid": "com.plexapp.agents.thetvdb://270915/5/1?lang=en",
+    "parentGuid": "com.plexapp.agents.thetvdb://270915/5?lang=en",
+    "grandparentGuid": "com.plexapp.agents.thetvdb://270915?lang=en",
+    "librarySectionTitle": "TV Shows",
+    "librarySectionID": 1,
+    "librarySectionKey": "/library/sections/1",
+    "type": "episode",
+    "title": "Black Tuesday",
+    "grandparentKey": "/library/metadata/4934",
+    "parentKey": "/library/metadata/4935",
+    "grandparentTitle": "Peaky Blinders",
+    "parentTitle": "Season 5",
+    "contentRating": "TV-MA",
+    "summary": "1929 â While his family deals with the repercussions of the Wall Street Crash, Tommy Shelby MP faces new dangers from unexpected quarters.",
+    "index": 1,
+    "parentIndex": 5,
+    "rating": 7,
+    "viewCount": 1,
+    "lastViewedAt": 1567453896,
+    "year": 2019,
+    "thumb": "/library/metadata/4936/thumb/1567372562",
+    "art": "/library/metadata/4934/art/1567372565",
+    "grandparentThumb": "/library/metadata/4934/thumb/1567372565",
+    "grandparentArt": "/library/metadata/4934/art/1567372565",
+    "originallyAvailableAt": "2019-08-25",
+    "addedAt": 1566771325,
+    "updatedAt": 1567372562,
+    "Director": [
+      {
+        "id": 6496,
+        "filter": "director=6496",
+        "tag": "Anthony Byrne"
+      }
+    ],
+    "Writer": [
+      {
+        "id": 6495,
+        "filter": "writer=6495",
+        "tag": "Steven Knight"
+      }
+    ]
+  }
+}
+
