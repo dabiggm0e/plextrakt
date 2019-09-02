@@ -1,5 +1,4 @@
 language: go
-before_script:
-  - docker-compose up -d
+before_script:  
   - go vet ./...
 script: go test -v ./...

@@ -13,7 +13,7 @@
   },
   "Player": {
     "local": true,
-    "publicAddress": "94.99.249.164",
+    "publicAddress": "1.1.1.1",
     "title": "Chrome",
     "uuid": "jcpk6tkjcspb78kjh9mwv89x"
   },
@@ -481,6 +481,6 @@
         "role": "Carabinieri",
         "thumb": "http://image.tmdb.org/t/p/original/k7sPSrNKZXdS5mNl4ualvyAmEEr.jpg"
       }
-    ]    
+    ]
   }
 }

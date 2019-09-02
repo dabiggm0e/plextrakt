@@ -13,7 +13,7 @@
   },
   "Player": {
     "local": true,
-    "publicAddress": "51.235.183.187",
+    "publicAddress": "1.1.1.1",
     "title": "Chrome",
     "uuid": "jcpk6tkjcspb78kjh9mwv89x"
   },
@@ -66,4 +66,3 @@
     ]
   }
 }
-
