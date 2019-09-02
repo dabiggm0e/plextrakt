@@ -1,5 +1,6 @@
 package plex
 
+// global constants
 const (
 	PlexMovieType = "movie"
 	PlexShowType  = "show"
