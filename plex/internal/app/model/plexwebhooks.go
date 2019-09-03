@@ -1,5 +1,7 @@
 package plex
 
+// https://support.plex.tv/articles/115002267687-webhooks/#toc-2
+
 // global constants
 const (
 	PlexMovieType = "movie"
