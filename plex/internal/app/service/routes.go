@@ -5,10 +5,10 @@ import "github.com/dabiggm0e/plextrakt/common/router"
 // Initialize our routes
 var routes = router.Routes{
 	router.Route{
-		"ParseEvent",
-		"POST",
-		"/plex/events",
-		ParsePlexEvent,
-		true,
+		Name:        "ParseEvent",
+		Method:      "POST",
+		Pattern:     "/plex/events",
+		HandlerFunc: ParsePlexEvent,
+		Monitor:     true,
 	},
 }
