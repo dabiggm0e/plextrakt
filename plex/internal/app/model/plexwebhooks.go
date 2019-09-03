@@ -1,11 +1,17 @@
 package model
 
+import (
+	"encoding/json"
+	"log"
+)
+
 // https://support.plex.tv/articles/115002267687-webhooks/#toc-2
 
 // global constants
 const (
-	PlexMovieType = "movie"
-	PlexShowType  = "show"
+	MediaTypeMovie = "movie"
+	MediaTypeShow  = "show"
+	EventScrobble  = "media.scrobble"
 )
 
 // Webhook describes the plex webhook json structure
@@ -161,12 +167,12 @@ func (e *Event) GetMediaType() string {
 
 //IsMovie returns whether the media is a movie or not
 func (e *Event) IsMovie() bool {
-	return e.Metadata.Mediatype == PlexMovieType
+	return e.Metadata.Mediatype == MediaTypeMovie
 }
 
 //IsShow returns whether the media is a show or not
 func (e *Event) IsShow() bool {
-	return e.Metadata.Mediatype == PlexShowType
+	return e.Metadata.Mediatype == MediaTypeShow
 }
 
 //GetSeason returns the show's season number
@@ -184,7 +190,32 @@ func (e *Event) GetShowTitle() string {
 	return e.Metadata.GrandParentTitle
 }
 
+//GetMovieTitle returns the movie's title
+func (e *Event) GetMovieTitle() string {
+	return e.Metadata.Title
+}
+
 //GetEpisodeTitle returns the show's episode title
 func (e *Event) GetEpisodeTitle() string {
 	return e.Metadata.Title
+}
+
+func (e *Event) GetAccountUser() string {
+	return e.Account.Title
+}
+
+func (e *Event) GetEvent() string {
+	return e.Event
+}
+
+func NewEventFromJson(payload string) (Event, error) {
+	event := Event{}
+	err := json.Unmarshal([]byte(payload), &event)
+
+	if err != nil {
+		log.Printf("Error unmarshaling: %v", err)
+		return Event{}, err
+	}
+
+	return event, nil
 }
