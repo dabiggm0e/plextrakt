@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/dabiggm0e/plextrakt/plex/cmd/plex"
+	"github.com/dabiggm0e/plextrakt/plex/internal/app/model"
 )
 
 func main() {
@@ -20,12 +20,12 @@ func main() {
 	//	fmt.Print(str)
 
 	// make sure it has been unmarshaled successfully
-	webhook := plex.Webhook{}
-	err = json.Unmarshal([]byte(file), &webhook)
+	event := model.Event{}
+	err = json.Unmarshal([]byte(file), &event)
 
 	if err != nil {
 		log.Printf("Error unmarshaling: %v", err)
 	}
-	fmt.Printf("%+v", webhook)
+	fmt.Printf("%+v", event)
 
 }
