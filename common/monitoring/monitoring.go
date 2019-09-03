@@ -5,9 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/callistaenterprise/goblog/common/router"
-	"github.com/callistaenterprise/goblog/common/tracing"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
@@ -70,7 +68,7 @@ func Monitor(serviceName, routeName, signature string) func(http.Handler) http.H
 	}
 }
 
-func Trace(opName string) func(http.Handler) http.Handler {
+/*func Trace(opName string) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(rw http.ResponseWriter, req *http.Request) {
 			logrus.Infof("starting span for %v", opName)
@@ -83,4 +81,4 @@ func Trace(opName string) func(http.Handler) http.Handler {
 			logrus.Infof("finished span for %v", opName)
 		})
 	}
-}
+}*/
