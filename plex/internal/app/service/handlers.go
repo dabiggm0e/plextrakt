@@ -42,6 +42,22 @@ func (h *Handler) SetHealthyState(w http.ResponseWriter, r *http.Request) {
 
 func ParsePlexEvent(w http.ResponseWriter, r *http.Request) {
 	//TODO: implement the handler
+	data := []byte("Hai hai!")
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Length", strconv.Itoa(len(data)))
+	w.Header().Set("Connection", "close")
+	w.WriteHeader(http.StatusAccepted)
+	w.Write(data)
+}
+
+func (h *Handler) ParsePlexEvent(w http.ResponseWriter, r *http.Request) {
+	//TODO: implement the handler
+	data := []byte("Hai hai!")
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Length", strconv.Itoa(len(data)))
+	w.Header().Set("Connection", "close")
+	w.WriteHeader(http.StatusAccepted)
+	w.Write(data)
 }
 
 // HealthCheck will return OK if the underlying Messaging service is healthy.

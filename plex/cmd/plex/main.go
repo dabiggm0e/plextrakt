@@ -9,6 +9,7 @@ import (
 	"github.com/Sirupsen/logrus"
 	"github.com/alexflint/go-arg"
 	"github.com/dabiggm0e/plextrakt/plex/cmd"
+	"github.com/dabiggm0e/plextrakt/plex/internal/app/service"
 )
 
 var appName = "plexService"
@@ -16,7 +17,7 @@ var appName = "plexService"
 func main() {
 
 	logrus.SetFormatter(&logrus.JSONFormatter{})
-	logrus.Infof("Starting %v\n", appName)
+	logrus.Infof("Starting %v", appName)
 
 	// Initialize config struct and populate it froms env vars and flags.
 	cfg := cmd.DefaultConfiguration()
@@ -32,13 +33,13 @@ func main() {
 	client.Transport = transport
 	_ = client
 
-	h := service.NewHandler(mc, client)
+	h := service.NewHandler( /*mc, */ client) //TODO: reuse mc again
 
 	s := service.NewServer(cfg, h)
 	s.SetupRoutes()
 
 	handleSigterm(func() {
-		mc.Close()
+		//mc.Close() // uncomment
 		s.Close()
 	})
 
