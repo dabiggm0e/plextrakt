@@ -1,4 +1,4 @@
-package plex
+package model
 
 // https://support.plex.tv/articles/115002267687-webhooks/#toc-2
 
@@ -9,7 +9,7 @@ const (
 )
 
 // Webhook describes the plex webhook json structure
-type Webhook struct {
+type Event struct {
 	Event    string
 	User     bool
 	Owner    bool
@@ -155,36 +155,36 @@ type Similar struct {
 }
 
 //GetMediaType returns the media type
-func (w *Webhook) GetMediaType() string {
-	return w.Metadata.Mediatype
+func (e *Event) GetMediaType() string {
+	return e.Metadata.Mediatype
 }
 
 //IsMovie returns whether the media is a movie or not
-func (w *Webhook) IsMovie() bool {
-	return w.Metadata.Mediatype == PlexMovieType
+func (e *Event) IsMovie() bool {
+	return e.Metadata.Mediatype == PlexMovieType
 }
 
 //IsShow returns whether the media is a show or not
-func (w *Webhook) IsShow() bool {
-	return w.Metadata.Mediatype == PlexShowType
+func (e *Event) IsShow() bool {
+	return e.Metadata.Mediatype == PlexShowType
 }
 
 //GetSeason returns the show's season number
-func (w *Webhook) GetSeason() int {
-	return w.Metadata.ParentIndex
+func (e *Event) GetSeason() int {
+	return e.Metadata.ParentIndex
 }
 
 //GetEpisodeNo returns the show's episode number
-func (w *Webhook) GetEpisodeNo() int {
-	return w.Metadata.Index
+func (e *Event) GetEpisodeNo() int {
+	return e.Metadata.Index
 }
 
 //GetShowTitle returns the show's title
-func (w *Webhook) GetShowTitle() string {
-	return w.Metadata.GrandParentTitle
+func (e *Event) GetShowTitle() string {
+	return e.Metadata.GrandParentTitle
 }
 
 //GetEpisodeTitle returns the show's episode title
-func (w *Webhook) GetEpisodeTitle() string {
-	return w.Metadata.Title
+func (e *Event) GetEpisodeTitle() string {
+	return e.Metadata.Title
 }

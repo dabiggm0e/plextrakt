@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/dabiggm0e/plextrakt/plex"
+	"github.com/dabiggm0e/plextrakt/plex/cmd/plex"
 )
 
 func main() {
